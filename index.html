@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - Great Foundation College</title>
+</head>
+<body background="asset/img/bg.jpg">
+    <header>
+        <h1>Great Foundation College</h1>
+        <hr>
+            <nav align="center">
+                <a href="#"><button>Home</button></a>
+                <a href="#"><button>About</button></a>
+                <a href="#"><button>Contact</button></a>
+                <a href="#"><button>Pricing</button></a>
+                <a href="#"><button>Gallery</button></a>
+                <a href="#"><button>Login</button></a>
+                <a href="#"><button>Register</button></a>
+            </nav>
+        <hr>
+    </header>
+    <main>
+        <center>
+            <h3>Student Enrollment Form</h3>
+            <hr width="200px">
+            <hr width="150px">
+            <hr width="100px">
+        </center>
+        <br>
+        <fieldset>
+            <form action="index.html" method="post" enctype="multipart/form-data"">
+                <div>
+                    <label for="fullname">Enter Your Fullname (<font color="red">* Only 2 to 10 Alphabets</font>)</label>
+                    <input type="text" pattern="[A-Z|a-z]*" id="fullname" placeholder="Full Name" maxlength="10" minlength="2" required>
+                </div>
+                <br>
+                <div>
+                    <label for="age">Enter Your Age</label>
+                    <input type="number" id="age" min="18" max="30" value="25" readonly>
+                </div>
+                <br>
+                <div>
+                    <label for="dob">Specify Your Date of Birth</label>
+                    <input type="date" id="dob" disabled title="Please Do not fill this box.">
+                </div>
+                <br>
+                <div>
+                    <label for="email">Enter Your Email</label>
+                    <input type="email" id="email">
+                </div>
+                <br>
+                <div>
+                    <label for="pass">Choose a Secured Password</label>
+                    <input type="password" id="pass" minlength="8">
+                </div>
+                <br>
+                <div>
+                    <label for="color">Choose color of the day</label>
+                    <input type="color" id="color">
+                </div>
+                <br>
+                <div>
+                    <span>Specify your Gender</span><br><br>
+                    <!--  -->
+                    <input type="radio" checked name="sex" id="male"><label for="male">Male</label>
+                    <input type="radio" name="sex" id="female"><label for="female">Female</label>
+                </div>
+                <br>
+                <div>
+                    <span>Specify Your Working days</span><br><br>
+                    <input type="checkbox" checked id="mon"><label for="mon">Monday</label>
+                    <input type="checkbox" id="tue"><label for="tue">Tuesday</label>
+                    <input type="checkbox" id="wed"><label for="wed">Wednesday</label>
+                    <input type="checkbox" checked id="thur"><label for="thur">Thursday</label>
+                    <input type="checkbox" id="fri"><label for="fri">Friday</label>
+                </div>
+                <br>
+                <div>
+                    <label for="ride">Select A Company Ride</label>
+                    <select id="ride">
+                        <option disabled selected>CHoose Your Prefarred Ride</option>
+                        <option value="1">Avalon 2003</option>
+                        <option value="2">Highlander 2005</option>
+                        <option value="3">Accura 350</option>
+                        <option value="4">Lexus 350</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="school">Choose School</label>
+                    <input list="learn" id="school">
+                    <datalist id="learn">
+                        <option value="Madonna">
+                        <option value="Imo City">
+                        <option value="FGC">
+                        <option value="GSSO">
+                        <option value="GTC">
+                        <option value="OGSS">
+                    </datalist>
+                </div>
+                <br>
+                <div>
+                    <label for="img">Choose a Profile Picture</label>
+                    <input type="file" id="img" accept="image/*">
+                </div>
+                <br>
+                <div>
+                    <label for="vid">Upload Your Video clips</label>
+                    <input type="file" id="vid" accept="video/*">
+                </div>
+                <br>
+                <div>
+                    <label for="aud">Upload voice notes</label>
+                    <input type="file" id="aud" accept="audio/*">
+                </div>
+                <br>
+                <hr width="100px">
+                <div>
+                    <input type="submit" value="Signup">
+                    <button type="submit">Register</button>
+                </div>
+            </form>
+        </fieldset>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
